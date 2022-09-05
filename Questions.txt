@@ -1,0 +1,29 @@
+ Question 1. An ___ is defined as a set of well-defined instructions used to accomplish a particular task.
+1. Algorithm
+2. Function
+3. Program
+4. Procedure
+
+Question 2. The measure of the longest amount of time possibly taken to complete an algorithm is expressed as __.
+1. Little-O
+2. Little-Omega
+3. Big-Omega
+4. Big-O
+
+Question 3. A ___ is a compact, informal, and environment-independent description of a computer programming algorithm.
+1. Stack
+2. Queue
+3. Psuedocode
+4. Non-linear data structure
+
+Question 4. ___ of an algorithm is the amount of time required for it to execute.
+1. Time complexity
+2. Space complexity
+3. Compiling time
+4. Best case
+
+Question 5. Potential function method is the technique that performs an amortized analysis based on ___.
+1. Financial model
+2. Computational model
+3. Algorithm analysis
+4. Energy model
