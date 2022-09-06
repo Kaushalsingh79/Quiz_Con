@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<conio.h>
 int result(char arr[]);
 struct details
         {
@@ -18,7 +17,7 @@ void StuDetail()
 }
 void db(){
     FILE *fl;
-    fl = fopen("database.txt","w+");
+    fl = fopen("C:\\Users\\karti\\CLionProjects\\untitled\\Database.txt","a+");
     fprintf(fl,"%s\t%d\t%d\n",student.name,student.rollno,student.marks);
 }
 
@@ -38,9 +37,10 @@ void main()
     }
     for(int j=0;j<5l;j++)
     {
+
         for(int i=0; i<5;i++)
         {
-            fgets(text,1000000000,fp);
+            fgets(text,10000,fp);
             printf("%s",text);
         }
         printf("\n");
@@ -48,6 +48,7 @@ void main()
         scanf("%s",&ar[j]);
         printf("\n");
         //clrscr();
+
 
     }
     student.marks=result(ar);
@@ -73,13 +74,21 @@ int result(char arr[])
 
     for(int i=0;i<5;i++)
     {
-        if(arr[i]==key[i])
-            r=r+4;
-        else if(arr[i]==0)
-            r=r+0;
-        else if(arr[i]!=key[i])
+//         if(arr[i]=='0') {
+//            r = r + 0;
+//          printf("ch");
+//             continue;
+//     }
+        if(arr[i]==key[i]) {
+
+            r = r + 4;
+            continue;
+        }
+
+        else if(arr[i]!=key[i] && arr[i]!='0')
             r--;
 
     }
+
     return r;
 }
